@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--it tells the browser the version of html we are using(html5)-->
+<html>
+<!--It tells the browser that everything in between html tags is
+  html code and that code consist of a head and a body-->
+<!--Hypertxt is a bunch of text documents that can be linked together using
+hyperlinks, so when you click one of them it leads you another text document,
+thats where the 'ht' part of an html document comes from.-->
+
+<head>
+  <!--the head is part of the html file that holds info about the webpage
+  and it tells the browser how it should handle  the page-->
+  <meta charset="utf-8">
+  <!--there are quite a different few meta elements,this particular one
+ is called character set. We are setting the character set to "utf-8". Well
+the meta element gives extra meta data or associated metadata to our
+html document. In this case we are telling the browser that when it opens
+this file, all the text inside our webpage is encoded using the utf-8 encoding
+system. You can google the characters in utf-8.
+the other thing is unicode includes emojis to your site from
+https://unicode-table.com/. so everythingthat is unicode can be coded correctly
+using utf-8. So the metadata gives yourwebsite the maximum chance of being
+rendered correctly from browsers originating from international visitors-->
+  <meta name="description" content="A detailed life history about Paddington">
+  <meta name="author" content="Paddington Mudzami">
+  <meta name="keywords" content="Education,">
+  <meta name="viewport" content="width=device-width,initial scale=" 1.0"">
+  <!--The above meta elements are the common. They gives information related
+to your website. These meta tags give information to search engines about
+  contents of the website. So for this site the desctiption attribute for
+one of the meta elements describe this site as tagged by the content.
+So search engines look for the meta tags with attribute description so
+as to display that description when a search related to your site is made
+and also how to display them in their search index. There is a whole bunch of
+attributes for the meta elements that can reseached about and how
+to use them -->
+  <title>🔥Paddington's Personal Site</title>
+</head>
+
+<body>
+  <table cellspacing="10px"> <!--The table attribute cell spacing adds space
+  between the image column and the subsequent text column-->
+    <tr>
+      <!--The below implementation of a table is used to demonstrate how one
+    can fill the entire space of a webpage without the use of CSS-->
+      <td><img src="Images/Paddington Mudzami.jpg" alt="Paddington Profile Picture" height="300px" width="350px"></td>
+      <td><h1>Paddington Mudzami</h1><p><em>Founder and CTO of <a href="https://www.linkedin.com/in/paddington-mudzami/">
+            <strong>Beat the Markets</strong></em>.</p></a><p>After graduating from NUST in Zimbabwe with a B.Eng. in Industrial
+              Engineering, Paddington found success in the foreign-exchange market. About
+              six years into his own mentorship, during which he struggled, Paddington
+              suddenly realized that market makers, persons or institutions that have
+              enough money, power, and influence to move the market, would create a new
+              low and a new high every day, with plenty of opportunities. Once he mastered
+              his emotions and the setups, he saw the bigger picture and was on his way
+              to financial growth and stability.</p></td>
+    </tr>
+  </table>
+  <!--If you cant get an image of yourself online,you may open an account on
+photobucket and upload your images there so that you can get a url for your image.
+You may also store the image locally in your sites folder-->
+  <!--The image tag is a self closing tag and a tag only is not sufficient
+  ww need to specify the source,so that can either be a url or a local image
+  included in the same directory as your website. The 'alt' attribute acts
+  as an alternative to your image if the image doest pop up, so it can be text.
+  It can also be used to describe what that text image is about, so if you are
+  intrested in SEO and getting your website ranking for certain keywords, this
+  is something that google looks at to try and figure out what your webpage
+  is about. So if you are making a webpage about barito recipes and you add an
+  'alt' text that says 'finished barito product image-1' then it helps google
+  to index and figure out that maybe your webpage is related when somebody is
+  searching for barito recipes-->
+  <h1>Paddington Mudzami</h1>
+  <!--Atom beautify does the indents for us
+    automatically-->
+  <p><em>Founder and CTO of <a href="https://www.linkedin.com/in/paddington-mudzami/">
+        <strong>Beat the Markets</strong></em>.</p></a>
+  <!--formats text into a paragraph -->
+  <!--the <a> tag inclusive of the hyperlink refrence attribute can be used to
+insert hyperlinks in text-->
+  <p>After graduating from NUST in Zimbabwe with a B.Eng. in Industrial
+    Engineering, Paddington found success in the foreign-exchange market. About
+    six years into his own mentorship, during which he struggled, Paddington
+    suddenly realized that market makers, persons or institutions that have
+    enough money, power, and influence to move the market, would create a new
+    low and a new high every day, with plenty of opportunities. Once he mastered
+    his emotions and the setups, he saw the bigger picture and was on his way
+    to financial growth and stability.</p>
+  <hr size="3" noshade>
+  <h3>Books and Teaching</h3>
+  <ul>
+    <!--unordered list tag-->
+    <li>First iterm</li>
+    <!--elements in the unordered list-->
+    <li><a href="https://www.youtube.com/watch?v=gKLvJvLTv-U&ab_channel=BayleeJae/">Second iterm</a></li>
+    <li>Third iterm</li>
+  </ul>
+  <p>
+    <hr>
+    <h3>Work experinace</h3>
+  </p>
+  <table cellspacing="10px" border="1px"> <!--Creating a table, tables assist us to indent our data-->
+    <thead>
+    <tr>
+      <th>Dates</th>
+      <th>Role</th>
+      <th>Location</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr> <!--Creating 1st table row-->
+        <td>2017 - 2018</td> <!--1st table cell or table column-->
+        <td>In-service training</td> <!--2nd table cell or table column-->
+        <td>Harare, Zimbabwe</td>
+      </tr>
+      <tr> <!--Creating 2nd table row-->
+        <td>2018 - 2019</td>
+        <td>Leveled up</td>
+        <td>Bulawayo, Zimbabwe </td>
+      </tr>
+      <tr>
+        <td>2019 - 2020</td>
+        <td>Skilling up</td>
+        <td>Harare, Zimbabwe</td>
+    </tbody>
+  </table>
+<!--The general structure of a table formating is as below
+<table>
+  </thead>
+  Inside the table head we can add some titles to each of our columns and make
+  it formatted by default in bold. thus we will add a new table row <tr></tr>
+  and inside table row we will create a table header cell element instead of
+  table data or td elements i.e <th></th>
+  </thead>
+
+  <tbody>
+  </tbody>
+
+  <tfoot>
+  </tfoot>
+</table>
+
+the reason why we've put table header, body and footer separately is we want
+to isolate the different parts of the table inorder to stlye it differently or
+make it function in a different way. Although declaring the header cell elements
+in the table element outside the head will achieve the same function but that
+will not allow us to isolate the different parts of the table depending on
+how we want to stle it">
+NB deprecated means something nolonger recomended to be used.
+-->
+<hr>
+<h3>Skills.</h3>
+<table cellspacing="10px"> <!--Table nesting, this structure is way confusing thats
+one of the reasonswhy using html to effect layout is not a great idea. -->
+  <tr>
+    <td>
+      <table cellspacing="10px">
+        <tbody>
+          <tr>
+            <td>
+              <ul>
+        <li>iOS Development</li>
+              </ul>
+              </td>
+              <td>🔥🔥🔥</td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>Web development</li>
+              </ul>
+            </td>
+            <td>🔥🔥🔥🔥🔥</td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>Photoshopping</li>
+              </ul>
+            </td>
+            <td>🔥🔥</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+    <td>
+      <table cellspacing="10px">
+        <tbody>
+          <tr>
+            <td>
+              <ul>
+        <li>iOS Development</li>
+              </ul>
+              </td>
+              <td>🔥🔥🔥</td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>Web development</li>
+              </ul>
+            </td>
+            <td>🔥🔥🔥🔥🔥</td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>Photoshopping</li>
+              </ul>
+            </td>
+            <td>🔥🔥</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</table>
+  <hr size="3" noshade> <!--horizontal rule-->
+  <!--You can download the html cheat sheet from stanford university-->
+  <p><a href="hobbies.html">My hobbies</a></p>
+  <a download href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf">Download cheet sheet</a>
+  <!--The order of where you place attributes doesnt matter, it just must not be duplicated.
+  the download attribute allows us to Download the doc without opening it.
+  </thead>-->
+  <a href="contact-me.html">Cantact Me</a>
+</body>
+
+</html>
+<!--Emmet is the plugin that auto completed the the boiler nameplate above
+Actually you can use https://docs.emmet.io/cheat-sheet/ to lookup for the
+those abbreviations to speedup your coding skillas you become a professional-->

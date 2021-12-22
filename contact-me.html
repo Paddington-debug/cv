@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Paddington Mudzami Contact Me Page</title>
+</head>
+
+<body>
+  <h1>My Contact Details</h1>
+  <p>Wellington Rd</p>
+  <p>Durbanville,Cape Town</p>
+  <p>Call:071 833 31010</p>
+  <p>Emailto:mudzamipaddington@gmail.com</p>
+  <hr>
+
+  <!--Form Semantics-->
+
+  <form class="" action="mailto:mudzamipaddington@gmail.com" method="post" enctype="text/plain">
+    <!--We use the 'form' element to define what must go in our form. 'Action' attribute
+  tells the browser what to do when the user clicks submit, encodingtype tells the
+    browser that the data in our form is in plain text just like the utf-8 thing.
+  post allows us to send captured data to our mail client-->
+    <label>Your Name</label> <!--info to describe users required input
+      is described in-between the label tags-->
+    <input type="text" name="YourName" value=""><br><!--input element has many types of attributes. ii is
+      is a self closing tag. The type attribute can be set to "submit" thus Creating
+      a button. By setting the attribute type to various keywords, you end up
+      with completely different things on your website. Even though we are using
+      the same element we will get completely different objects from the input
+      element from textboxes,buttons,color pickers etc just by changing that type -->
+
+    <p><label>Your Email</label>
+    <input type="text" name="YourEmail"><br></p>
+    <!--Attributes within the input elements like 'name' must be added values
+    e.g YourEmail so as to identify data that is going to be inputted by <thead>
+      user.
+    </thead>-->
+
+    <p><label>Your Message?</label><br>
+      <textarea name="YourMessage" rows="8" cols="80"></textarea><br></p>
+
+      <p><input type="submit"</p>
+    </form>
+      <!--modyfying the input type to 'submit' enable us to get the submit button-->
+<!--Try all these types of input types using mdn and have fun-->
+
+<h3>Examples of input types</h3>
+<form>
+  <p><label>Adjust slider</label><input type="range"></p>
+  <p><label>Choose</label><input type="radio"</p>
+  <p><label>Select date</label><input type="date"</p>
+  <p><label>Upload file</label><input type="file"</p>
+</form>
+
+</body>
+
+</html>
